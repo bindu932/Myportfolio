@@ -1352,15 +1352,7 @@ Gained expertise in containerization, cloud deployment, and building responsive,
         <h2 class="section-title">Contact Me</h2>
         <div class="contact-container">
             <div class="contact-info">
-                <div class="contact-item" onclick="window.location.href='tel:+919885360431';" style="cursor: pointer;">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h3>Phone</h3>
-                        <p>Click to call</p>
-                    </div>
-                </div>
+                
                 <div class="contact-item" onclick="window.location.href='mailto:binduveluru932@gmail.com';" style="cursor: pointer;">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
@@ -1475,7 +1467,7 @@ Gained expertise in containerization, cloud deployment, and building responsive,
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     
     <script>
-        // Initialize particles.js
+        // particles.js
         document.addEventListener('DOMContentLoaded', function() {
             particlesJS('particles-js', {
                 "particles": {
@@ -1592,15 +1584,6 @@ Gained expertise in containerization, cloud deployment, and building responsive,
             nav.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking on a nav link
-        const navLinks = document.querySelectorAll('nav ul li a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-            });
-        });
-
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1631,10 +1614,10 @@ Gained expertise in containerization, cloud deployment, and building responsive,
             // Create mailto link
             const mailtoLink = `mailto:binduveluru932@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`)}`;
             
-            // Open default email client
+        
             window.location.href = mailtoLink;
             
-            // Reset form
+            /
             contactForm.reset();
         });
 
@@ -1652,21 +1635,17 @@ Gained expertise in containerization, cloud deployment, and building responsive,
                 }
             });
         };
-
-        // Set initial state for animated elements
         document.querySelectorAll('.experience-item, .education-item, .project-item, .certificate-item').forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(30px)';
             element.style.transition = 'all 0.5s ease';
         });
 
-        // Run animation on scroll
         window.addEventListener('scroll', animateOnScroll);
-        
-        // Run once on page load
+       
         window.addEventListener('load', animateOnScroll);
 
-        // Mouse move effect for gradient background
+
         document.addEventListener('mousemove', function(e) {
             const x = e.clientX / window.innerWidth;
             const y = e.clientY / window.innerHeight;
